@@ -15,3 +15,5 @@ myTodos.forEach(function(todo, i) {
 for (let i = 0; i < myTodos.length; i++) {
     console.log(`for: Your task no. ${i+1} is: ${myTodos[i]}`)
 }
+
+
