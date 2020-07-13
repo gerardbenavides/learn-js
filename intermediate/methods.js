@@ -2,13 +2,14 @@ let myTodos = {
     day: 'Monday',
     meetings: 0,
     meetDone: 0,
+    meetLeft: 0,
 
     addMeeting: function(num = 0) {
         this.meetings = this.meetings + num
     },
 
-    meetDone: function (num = 0) {
-        this.meetings = this.meetings - num
+    done: function (num = 0) {
+        this.meetDone = this.meetDone + num
     },
 
     resetDay: function() { // NOT WORKINGGGGGGGGGG
@@ -17,16 +18,16 @@ let myTodos = {
     },
 
     summary: function() {
-        console.log(`You have ${this.meetings} meetings left for today`) 
+        this.meetLeft =   this.meetings - this.meetDone
+        console.log(`You have ${this.meetLeft} meetings left for today`) 
     }
 
 }
 
 myTodos.addMeeting(1)
 myTodos.addMeeting(10)
-myTodos.resetDay
-myTodos.meetDone(5)
+myTodos.done(5)
 
-
+console.log(myTodos.meetDone) // Prints number of meetings
 console.log(myTodos.meetings) // Prints number of meetings
 myTodos.summary() // Prints text with them meeting left for today
