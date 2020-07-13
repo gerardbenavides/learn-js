@@ -25,5 +25,8 @@ let getSummaryOfDay = function(todo) {
 addMeeting(myTodos, 2)
 addMeeting(myTodos, 4)
 meetDone(myTodos, 5)
+meetDone(myTodos, 5)
 
+console.log(myTodos.meetings)
+console.log(myTodos.meetDone)
 console.log(getSummaryOfDay(myTodos))
