@@ -7,9 +7,23 @@
 </head>
 <body>
     <h1>Hey this is my header title</h1>
-    <p>This p has no id</p>
-    <p id="p1">This p has id p1 </p>
+    <p id="p1">This p has no id</p>
+    <p id="p2">This p has id p1 </p>
     <p class="p1class"> This p has class p1class</p>
-    <script src="script.js"></script>
+    <button id="genP"> Click me to generate a p element! </button>
+        <script src="script.js"></script>
+    <br>
+    <h1>FORM VALIDATION</h1>
+    <input type="text" id="myform" placeholder="Input text here"> </input>          
+    <button onclick="myValidation()" id="validateForm"> Validate!</button>
+    <p id="errMsg">Please input character length greater than 20</p>    
+
+    <h1>ADVANCED FORM VALIDATION</h1>
+    <form class="myForm">
+        <input type="text" name="username" placeholder="Username">
+        <input type="text" name="realname" placeholder="Real name">
+        <button type="submit">Click to validate!</button>     
+    </form>
+<script src="validation.js"></script>
 </body>
 </html>
